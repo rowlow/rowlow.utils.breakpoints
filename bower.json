@@ -1,0 +1,16 @@
+{
+  "name": "rowlow.utils.breakpoints",
+  "version": "0.1.0",
+  "homepage": "http://rowlow.github.io",
+  "authors": [
+    "Roland Lösslein <info@weaintplastic.com>"
+  ],
+  "description": "Responsive breakpoints for ROW LOW framework",
+  "main": "main.scss",
+  "keywords": [
+    "breakpoints",
+    "rowlow"
+  ],
+  "ignore": [],
+  "license": "MIT"
+}
