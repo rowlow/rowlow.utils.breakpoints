@@ -1,0 +1,18 @@
+@function rowlow-breakpoint($breakpoint-name) {
+	@return map-get($rowlow-breakpoints, $breakpoint-name);
+}
+
+@function rowlow-breakpoint-min($breakpoint-name) {
+	@return rowlow-breakpoint($breakpoint-name);
+}
+
+@function rowlow-breakpoint-max($breakpoint-name) {
+	$breakpoint-names: map-keys($rowlow-breakpoints);
+	$brakpoint-values: map-values($rowlow-breakpoints);
+	$index: index($breakpoint-names, $breakpoint-name);
+	@if($index >= length($rowlow-breakpoints)){
+		@return 999999;
+	} @else{
+		@return (nth($brakpoint-values, $index+1) - 1);
+	}
+}
